@@ -33,8 +33,8 @@ const Customer = function(customer) {
         }
     
         if (res.length) {
-          console.log("found customer: ", res[0]);
-          result(null, res[0]);
+          console.log("found customer: ", res.rows);
+          result(null, res.rows);
           return;
         }
     
@@ -52,8 +52,8 @@ const Customer = function(customer) {
           return;
         }
     
-        console.log("customers: ", res);
-        result(null, res);
+        console.log("customers: ", res.rows);
+        result(null, res.rows);
     });
   };
   
