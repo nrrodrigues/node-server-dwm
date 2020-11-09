@@ -1,4 +1,5 @@
-const sql = require("./db.js");
+//const sql = require("./db_mysql.js");
+const sql = require("./db_postgre.js");
 
 // constructor
 const Customer = function(customer) {
